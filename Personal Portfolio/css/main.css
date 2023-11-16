@@ -1,0 +1,169 @@
+:root {
+    --background-color: #212121;
+    --site-color1: #00B897;
+    --site-color2: #03725e;
+    --site-color3:#013425;
+    --max-lines:5;
+    --line-height:1.5;
+}
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: Helvetica, sans-serif;
+    color: white;
+    background-color: var(--background-color);
+    font-size: 16px;
+    line-height:var(--line-height);
+}
+ul {
+    list-style: none;
+}
+a {
+    cursor: pointer;
+    color:white;
+    text-decoration: none;
+}
+h1 {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+hr {
+    border:1px solid var(--site-color1)
+}
+
+
+/* HEADER */
+.header-main {
+    height: 4rem;
+    margin:0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.header-main-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header-main-logo img{
+    width:8rem;
+    object-fit: cover;
+    margin-right:5rem;
+}
+
+.header-main-nav ul li {
+    display:flex;
+    float:left;
+    line-height: var(--line-height);
+}
+.header-main-nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding:0 1rem;
+}
+.header-main-nav ul li a:hover{
+    color:var(--site-color2);
+}
+.header-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;;
+}
+.social-icon {
+    width:3rem;
+    height:3rem;
+}
+.social-icon:nth-child(1){
+    background-image: url(../Images/handshake-icon-plain.png);
+    background-size:cover;
+}
+.social-icon:nth-child(1):hover{
+    background-image: url(../Images/handshake-icon.png);
+}
+.social-icon:nth-child(2){
+    background-image: url(../Images/linkedin-icon-plain.png);
+    background-size:cover;
+}
+.social-icon:nth-child(2):hover{
+    background-image: url(../Images/linkedin-icon.png);
+}
+/* Content Wrapper */
+.main-title {
+    padding:1rem;
+    margin-bottom: 1rem;
+    background-image: url(../Images/bg.png);
+    background-position: center;
+    background-size:  cover ;
+    background-repeat: no-repeat;
+}
+.main-content {
+    padding: 2rem 5rem;
+}
+
+/* Footer */
+.footer-main {
+    background-color: var(--site-color3);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-main-content {
+    flex-basis: 100%;
+    display: flex;
+    column-gap: 3rem;
+    justify-content: center;
+    padding-bottom: 6rem;
+    line-height: var(--line-height);
+    font-size:medium;
+}
+
+
+.footer-sitemap ul li a{
+    border: none;
+    text-decoration: none;
+    font-weight: 400;
+}
+.footer-text {
+    height: fit-content;
+    font-weight: 300;
+    text-align: center;
+}
+.footer-contact {
+    height: fit-content;
+    text-align: right;
+}
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-contact ul li{
+    border: none;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.footer-contact ul li :hover{
+    opacity: .8;
+}
+.footer-sitemap ul li a:hover{
+    opacity: .8;
+
+}

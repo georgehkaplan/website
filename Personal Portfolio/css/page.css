@@ -1,0 +1,28 @@
+main {
+    margin: 2rem 10rem;
+    align-items: center;
+    justify-self: center;
+    list-style: circle;
+    text-align: justify;
+}
+main ol, main ul, main li {
+    margin: .25rem;
+}
+main ul{
+    list-style: circle;
+}
+.intro-image {
+    padding: 0 2rem;
+
+}
+.intro-image img{
+    width: 17rem;
+    height: auto;
+    object-fit: scale-down;
+    vertical-align: middle;
+    float: left;
+    margin: 0 2rem;
+}
+.intro-text {
+    text-align: justify;
+}
