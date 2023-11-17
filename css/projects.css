@@ -1,0 +1,50 @@
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap row ;
+}
+.project-box {
+    position: relative;
+    overflow:hidden;
+    margin: 1rem;
+    transition: transform .5s;
+}
+.project-box img{
+    display: block;
+    width:24rem;
+    height:28rem;
+    object-fit: cover;
+}
+.project-box-content {
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),var(--site-color3));
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    row-gap: 1rem;
+    transition: height 0.5s;
+}
+
+.project-box-content a img{
+    width:3rem;
+    height: 3rem;
+    object-fit: cover;
+    text-decoration: none;
+    background-color:white;
+    padding:.5rem;
+    border-radius: 50%;
+    text-align: center;
+}
+.project-box:hover  {
+    transform: scale(1.1);
+}
+.project-box:hover .project-box-content{
+    height:100%;
+}
