@@ -1,212 +1,166 @@
-/* Default styles */
+/* color styles */
 
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  place-items: center;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    width: 20rem;
-    height: 28rem;
-    cursor: pointer;
-    overflow: hidden;
-    background-color: white;
-    color: black;
-    transition: 0.5s ease;
-    border-radius: 10px;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 1.0);
-    margin: 1rem;
+  width: 23rem;
+  height: 35rem;
+  display: flex;
+  flex-direction: column; 
+  overflow: hidden;
+  transition: 1s ease;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 1.0);
 }
-
 .card-img {
-    height: 30%;
-    overflow: hidden;
+  height:40%;
+  overflow: hidden;
 }
 
-.card img {
-    width: 100%;
-    height: 30%;
-    object-fit: cover;
-}
-
-.card-content p {
-    padding: 1rem;
-    overflow: hidden;
+.card-img img {
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .card-content {
-    height: 70%;
-    padding: 0.5rem 0.5rem;
-    display: flex;
-    flex-direction: column;
-    color: black;
+  height: 21rem;
+  bottom: 0;
+  overflow: hidden;
 }
 
 .card-content h3,
 .card-content i {
-    text-align: center;
+  text-align: center;
 }
-
 .card:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
+}
+.card-content a{
+  align-self: center;
+  margin-top: 1rem;
 }
 
 .close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 10;
-    color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+  color: var(--background-color);
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal .close {
-    display: block;
-    color: #000;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 10;
+  display: block;
+  color: var(--text-color);
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 5;
 }
 
 .modal-content {
-    position: absolute;
-    top: 22.5%;
-    left: 25%;
-    width: 50%;
-    height: 55vh;
-    overflow: hidden;
-    background: white;
-    display: flex;
+  position: absolute;
+  top: 22.5%;
+  left: 25%;
+  width: 70vw;
+  height: 55vh;
+
+  background-color: var(--background-color);
+  display: flex;
+  border-radius: 1rem;
+  border-left: solid 1px var(--background-color);
 }
 
 .modal-image {
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 1s ease;
+  width: 50%;
+  object-fit: cover;
+  transition: transform 1s ease;
+  border-radius: 1;
 }
 
 .modal-text {
-    position: relative;
-    width: 50%;
-    height: 100%;
-    overflow-y: auto;
-    padding: 2rem;
-    box-sizing: border-box;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    vertical-align: middle;
+  position: relative;
+  width: fit-content;
+  overflow-y: auto;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: var(--text-color);
+  border-left: 2px solid var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
 }
 
 .modal-text h1,
 .modal-text i {
-    text-align: center;
+  text-align: center;
 }
 
 .modal-text a {
-    width: fit-content;
-    display: block;
-    text-align: center;
-    margin-top: 2.0rem;
-    padding: 0.5rem 1rem;
-    background-color: var(--site-color1);
+  width: fit-content;
+  display: block;
+  text-align: center;
+  margin-top: 2.0rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--site-color1);
 }
 
 .prev,
 .next {
-    display: none;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.5);
-    font-weight: bold;
-    transition: 1s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: var(--background-color);
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  transition: 1s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
 .next {
-    right: 50%;
-    border-radius: 3px 0 0 3px;
+  right: 50%;
+  border-radius: 3px 0 0 3px;
 }
 
 .prev {
-    left: 0;
+  left: 0;
 }
 
 .modal .prev,
 .modal .next {
-    display: block;
+  display: block;
 }
 
 .modal-image.slide-left {
-    transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 .modal-image.slide-right {
-    transform: translateX(100%);
-}
-
-/* Media queries for mobile devices */
-
-@media only screen and (max-width: 768px) {
-    .card {
-        width: 100%;
-        height: auto;
-        margin: 1rem 0;
-    }
-
-    .card-img {
-        height: auto;
-    }
-
-    .card img {
-        height: auto;
-    }
-
-    .card-content {
-        height: auto;
-    }
-
-    .modal-content {
-        top: 10%;
-        left: 10%;
-        width: 80%;
-        height: 80vh;
-    }
-
-    .modal-image {
-        width: 100%;
-    }
-
-    .modal-text {
-        width: 100%;
-        padding: 1rem;
-    }
+  transform: translateX(100%);
 }

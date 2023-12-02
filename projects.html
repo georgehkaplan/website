@@ -6,12 +6,17 @@
     <title>Projects</title>
     <link rel='stylesheet' href="css/main.css">
     <link rel="stylesheet" href="css/projects.css">
+    <script src="https://kit.fontawesome.com/c565d3ada5.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header class="header-main">
-        <div class="header-main-logo">
-            <img src="Images/logo.png" alt="George Kaplan Logo">
-            <nav class="header-main-nav">
+    <!--Header-->
+    <header>
+        <div class="header-logo">
+            <a href="index.html" id="logo"><img src="Images/logo1.png" alt="logo" id="logo-img"></a>
+        </div>
+        <div class="header-nav">
+            <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -19,29 +24,53 @@
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="resume.html">Resume</a></li>
                 </ul>            
-            </nav> 
+            </nav>       
         </div>
-        <div class="header-icons">
-            <a class="social-icon" href="https://app.joinhandshake.com/stu/users/27807369" target="_blank"></a>
-            <a class="social-icon" href="https://www.linkedin.com/in/georgehkaplan/" target="_blank"></a>
-        </div>
+        <img src="Images/moon-icon.png" alt="moon icon" id="icon">
     </header>
-    <h1 class="main-title">Projects</h1>
-
+    <!--Mobile Header-->
+    <div class="mobile-container">
+        <nav class="mobile-nav">
+            <a href="about.html"><i class="fa-solid fa-circle-user"></i></a>
+            <a href="blog.html"><i class="fa-solid fa-book"></i></a>
+            <a href="index.html" ><i class="fa-solid fa-house"></i></a>
+            <a href="projects.html"class="active"><i class="fa-solid fa-laptop-code"></i></a>
+            <a href="resume.html"><i class="fa-solid fa-file"></i></a>
+        </nav>
+    </div>
     <main class="main-content">
+       <h1>Projects</h1>
         <div class="card-container">
             <div class="card" onclick="expandCard(this)">
-                <img src="https://techrys.com/wp-content/uploads/2023/05/Is-There-a-Chat-GPT-App-for-iPhone.jpg" alt="Chat GPT Logo">
-                <div class="card-content">
+                <div class="card-img">
+                    <img src="Images/fin424-pacificgrove.png" alt="Pacific Grove Capital Management Project Finance 423">
+                </div>
+                <div class="card-content hidden">
+                    <h3>FIN423 Project: PGC Case Study</h3>
+                    <i>Oct 2023</i>
+                    <p>
+                        Analyzing the Pacific Grove Company's financial document was an insightful journey for me. Here's a brief overview of my experience. <br><br>
+                        <strong>Professional Impact:</strong>  <br>This analysis was pivotal for me. It enhanced my understanding of the financial implications for investors, creditors, and management, and sharpened my skills in strategic financial decision-making.<br>
+                        <strong>Conclusion:</strong> <br>Working on this document was not just about crunching numbers; it was a deep dive into business finance, significantly enriching my professional expertise.
+                    </p>
+                    <a href="https://onedrive.live.com/embed?resid=B8E7EE3185E5E2FF%219303&authkey=!ANuRGC6vASCWJ8A&em=2" class="green-button" target="_blank">Open Project</a>
+                </div>
+            </div>
+            <div class="card" onclick="expandCard(this)">
+                <div class="card-img">
+                    <img src="https://techrys.com/wp-content/uploads/2023/05/Is-There-a-Chat-GPT-App-for-iPhone.jpg" alt="Chat GPT Logo">
+                </div>
+                <div class="card-content hidden">
                     <h3>ChatGPT Professionalism</h3>
                     <i>Nov 2023</i>
-                    <p>This AI project enhances resumes, offers interview practice, provides company insights, networking tips, and cover letter assistance. <br>
-                    <br>With ChatGPT, recent graduates gain a valuable edge in their job search, helping them stand out and succeed. #JobSearch #AIAssistant #CareerAdvancement"</p>
-                    <a href = "chatGPT.html">Learn More!</a>
+                    <p>
+                        This AI project enhances resumes, offers interview practice, provides company insights, networking tips, and cover letter assistance. <br><br>With ChatGPT, recent graduates gain a valuable edge in their job search, helping them stand out and succeed. #JobSearch #AIAssistant #CareerAdvancement"
+                    </p>
+                    <a href = "chatGPT.html" class="green-button" target="_blank">Learn More!</a>
                 </div>
             </div>
 
-            <div class="card" onclick="expandCard(this)">
+            <div class="card hidden fromBottom" onclick="expandCard(this)">
                 <div class="card-img">
                     <img src="Images/resume1.svg" alt="resume guide page 1">
                     <img src="Images/resume2.svg" alt="resume guide page 2">
@@ -50,59 +79,55 @@
                     <img src="Images/resume5.svg" alt="resume guide page 5">
                     <img src="Images/resume6.svg" alt="resume guide page 6">                       
                 </div>
-                <div class="card-content">
-                    <h3>Resume Guide</h3>
+                <div class="card-content hidden">
+                    <h3>Crafting an Effective Resume</h3>
                     <i>Oct 2023</i>
-                    <p>A indepth guide to creating a resume. 
-                        A strong resume includes a clear header, focused objective, academic achievements, technical skills, detailed experience, leadership roles, and personal interests. This ensures a concise and compelling representation of qualifications</p>
+                    <p>
+                        In my quest for professional growth, I've come to appreciate the importance of creating an impactful resume. Whether you're just starting your career or have years of experience, a well-crafted resume is your ticket to success in the competitive job market.<br>
+                        <br>In the paragraphs to follow, I'll delve into the essential components of a compelling resume and share valuable tips and strategies to effectively showcase qualifications. Join me on this journey as we master the art of self-presentation, ensuring that our resumes leave a lasting impression on potential employers.
                     </p>
-                    <a href="https://drive.google.com/file/d/14r9wE6NM8wm7LOocAPsbrnCIGVyTz_FJ/view?usp=sharing" target="_blank">View Full Document</a>
+                    <a href="https://www.canva.com/design/DAFj0A_qLcc/view" class="green-button" target="_blank">View Full Document</a>
                 </div>
             </div>
 
-            <div class="card" onclick="expandCard(this)">
-                <img src="Images/jobtracking.png" alt="resume guide">                    
-                <div class="card-content">
+            <div class="card hidden fromBottom" onclick="expandCard(this)">
+                <div class="card-img">
+                    <img src="Images/jobtracking.png" alt="job tracking template">
+                </div>
+                <div class="card-content hidden">
                     <h3>Internship/Job Tracking Template</h3>
                     <i>Oct 2023</i>
-                    <p>The Job Tracking Template is a streamlined tool for task and project management. It offers clear columns for task names, deadlines, team assignments, and status updates. Additionally, it facilitates team communication through notes and comments. Elevate your project management with this user-friendly template.
-                    </p>
-                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR6_vR44djVcy3K-A90TsDQJ2tacrCqso4CQcSltt-ZOMKlrRl3tMISpZVHVvFKB0oMbAa_YdiXVpA6/pubhtml" target="_blank">Use Template</a>
+                    <p>The Job Tracking Template is a streamlined tool for task and project management. It offers clear columns for task names, deadlines, team assignments, and status updates. Additionally, it facilitates team communication through notes and comments. Elevate your project management with this user-friendly template.<br></p>
+                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR6_vR44djVcy3K-A90TsDQJ2tacrCqso4CQcSltt-ZOMKlrRl3tMISpZVHVvFKB0oMbAa_YdiXVpA6/pubhtml" class="green-button" target="_blank">Use Template</a>
                 </div>
             </div>
 
-            <div class="card" onclick="expandCard(this)">
-                <img src="Images/project-youngmoney.png" alt="Youth Money Project Home Page">
-                <div class="card-content">
+            <div class="card hidden fromBottom" onclick="expandCard(this)">
+                <div class="card-img">
+                    <img src="Images/project-youngmoney.png" alt="portfolio website">
+                </div>
+                <div class="card-content hidden">
                     <h3>Youth Money Website</h3>
                     <i>Dec 2021</i>
-                    <p>YoungMoney is an online website design to promote and educate towards financial knowledge. As there are various concepts in Finance that are difficult to understand, YoungMoney aims to simplify to the greater public.</p>
-                    <a href="https://youthmoneysdsu.weebly.com">Open Website!</a>
+                    <p>YoungMoney is an online website design to promote and educate towards financial knowledge. As there are various concepts in Finance that are difficult to understand, YoungMoney aims to simplify to the greater public.<br></p>
+                    <a href="https://youthmoneysdsu.weebly.com" class="green-button" target="_blank">Open Website!</a>
                 </div>
             </div>
 
-            <div class="card" onclick="expandCard(this)">
-                <img src="Images/project-database.png" alt="Database Project Image">
-                <div class="card-content">
+            <div class="card hidden fromBottom" onclick="expandCard(this)">
+                <div class="card-img">
+                    <img src="Images/project-database.png" alt="mis380 database project">
+                </div>
+                <div class="card-content hidden">
                     <h3>Database Term Project</h3>
                     <i>May 2022</i>
-                    <p>Group 3's project in MIS 380 Section 1 focuses on a Flower Store Management System. Using a database, it streamlines operations and aids decision-making. This system brings benefits in financial tracking, vendor management, and error resolution. The project encompasses conceptual modeling, database design, SQL implementation, and includes a Tableau-based enterprise dashboard.</p>
-                    <a href="https://docs.google.com/document/d/1qVg0xASDgE88_CSgHIgLPYk_aEGDf5MoMCr7gPuUG4Q/edit">Open Project</a>
+                    <p>
+                        I'm excited to introduce our project, the "Efficient Flower Store Management System." Our team has developed a powerful database solution aimed at transforming flower shop operations. We've harnessed technology to empower flower shop staff and managers with valuable real-time insights, simplifying tasks like inventory management, financial tracking, and customer engagement. Moreover, our system is scalable, making it adaptable for similar businesses seeking operational enhancements. Using Tableau, we've created an intuitive, visually appealing database dashboard for easy data interaction.<Br><br>
+                        In essence, our Flower Store Management System is a game-changer, and I'm proud to have contributed to this project. It's poised to boost efficiency and data-driven decision-making, ultimately benefiting flower shops in achieving success.<br>
+                    </p>
+                    <a href="https://docs.google.com/document/d/1qVg0xASDgE88_CSgHIgLPYk_aEGDf5MoMCr7gPuUG4Q/edit" class="green-button" target="_blank">Open Project</a>
                 </div>
             </div>
-
-            <!--Code for adding new cards
-
-            <div class="card" onclick="expandCard(this)">
-                <img src=""alt="">
-                <div class="card-text">
-                    <h3>Project Title</h3>
-                    <i>Oct 2023</i>
-                    <p>Project Description</p>
-                    <a href="#">Learn More!</a>
-                </div>
-            </div>
-            -->
         </div>
 
 
@@ -113,8 +138,9 @@
               <div class="modal-text">
                 <h3>Project Title</h3>
                 <i>Oct 2023</i>
-                <p>Project Description</p>
-                <a href="#">Learn More!</a>
+                <p>Project Description
+                <a href="#" target="_blank">Learn More!</a>
+                </p>
               </div>
                 <span class="close" onclick="closeModal()">X</span>              
                 <a class="prev" onclick="changeImage(-1)">&#10094;</a>
@@ -122,11 +148,14 @@
             </div>
           </div>
     </main>
-
-
     <footer class="footer-main">
         <h2>Website Information</h2>
+        <hr id="footer-line">
         <div class="footer-main-content">
+            <div class="footer-text">
+                <p>&copy; georgehkaplan.com<br>
+                </p>
+            </div>            
             <div class="footer-sitemap">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -136,15 +165,7 @@
                     <li><a href="resume.html">Resume</a></li>
                 </ul>      
             </div>  
-            <div class="footer-text">
-                <p>This website is created for a project in MIS:481 - E-business and Web Development at San Diego State University. <br>
-                    It serves as a demonstration of skills and knowledge acquired during the course. The content, products, and services displayed <br>
-                    here are for educational purposes only and do not represent actual offerings. <br>
-                    <br>
-                    For any inquiries or further information, please contact George Kaplan at gkaplan1509@sdsu.edu"</p>
-            </div>
             <div class="footer-contact">
-                <p>Contact Info</p>
                 <ul>
                     <li>Tel: (206)-890-7606</li>
                     <li>gkaplan1509@sdsu.edu</li>
@@ -153,6 +174,5 @@
             </div>            
         </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>

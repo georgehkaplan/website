@@ -1,166 +1,186 @@
-section {
-    padding: 2rem 5rem;
+/* Main Index Page */
+text{
+    content:"";
+    background: -webkit-linear-gradient(var(--site-color1), var(--site-color3));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.main-hero {
-    height: calc(70vh - 5rem);
-    background-image: url(../Images/portrait.png), url(../Images/bg.png);
-    background-size: 60vh, cover;
-    background-position: bottom center;
-    background-repeat: no-repeat;
+
+main a{
+    color: var(--text-color);
+    font-weight: bold;
+}
+main a:hover{
+    background-color: var(--site-color3);
+    text-shadow: 0rem 0rem 5rem var(--background-color);
+}
+.main-title {
+    max-height: 80vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    z-index: 100;
-    column-gap: 5rem;
-    padding:0 5rem;
-}
-
-.main-hero-intro a {
-    width:fit-content;
-    display: block;
     text-align: center;
-    margin-top: 2.0rem;
-    padding:.5rem 1rem;
-    background-color: var(--site-color1);
-}
-.main-hero-quotes {
-    border-left: .25rem solid var(--site-color1);
-    padding-left: 1rem;
-    margin-left: 5rem;
 }
 
-.index-category{
-    color:black;
-    background-color: white;
-}
-.index-container {
+.main-hero-intro {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
-    padding:2rem;
+    align-items: center;
+    animation: slideInFromBottom 1s ease;
 }
-
-.index-category-box{
-    height:15rem;
-    width: 15rem;  
-    margin: 1rem;
+.main-hero-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #111 center/cover;
-    position: relative;
+    flex-direction: column;
+    animation: slideInFromBottom 1s ease;
 }
-.index-category-box h3 {
-    line-height: var(--line-height);
-    text-shadow: 0 .10rem .10rem #000;
-    text-transform: uppercase;
-    z-index: 100;
+.main-hero-img img {
+    height: 50vh;
+    margin-top: 10vh;
+    object-position: bottom;
+    animation: fadeIn 2s ease-in-out;
 }
-
-.index-category-box:hover{
-    background-color: rgba(0,0,0,.4);;
-    background-blend-mode: darken;
-}
-.index-category-box:nth-child(1){
-    background: rgba(0,0,0,.4) url(../Images/about.jpg) center/cover;
-}
-.index-category-box:nth-child(2){
-    background:  rgba(0,0,0,.4) url(../Images/summer-internship.jpeg) center/cover;
-}
-.index-category-box:nth-child(3){
-    background:  rgba(0,0,0,.4) url(../Images/sdsu-campus.jpeg) center/cover;
-}
-.index-category-box:nth-child(4){
-    background:  rgba(0,0,0,.4) url(../Images/George-Kaplan-Resume.png) center/cover;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.category-overlay {
-    position: absolute;
-    top: 0;
-    right:0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0,0,0,.4);
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(120%);
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+p {
+    margin: .5rem;
+}
+.card {
+    padding: 0;
+}
+.main-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-
+.main-icons a img {
+    justify-content: center;
+    flex-flow: row wrap;
+    max-height: 4rem;
+    object-fit: cover;
+    margin: .25rem;
+    filter: grayscale(100%);
+}
+.main-icons a img:hover {
+    filter: grayscale(0%) saturate(100%);
+}
 /*About block*/
 .index-about {
-    display: flex;
+    background-color: var(--background1);
+}
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem 5rem;
+    place-content: center;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.about-skills-container {
     justify-content: center;
     align-items: center;
-    margin: 5rem;
-    column-gap: 2rem;
+    text-align: start;
+    padding: 1rem;
 }
-.index-about-img {
-    width:30%;
-}
-.index-about-img img{
-    width:90%;
-    vertical-align: middle;
-}
-.index-about-text {
-    width:35%;
+
+
+.index-about-text{
+    padding:1rem;
 }
 .index-about-text a {
-    display:block;
+    display: block;
     background-color: var(--site-color1);
     text-transform: uppercase;
-    width:fit-content;
-    padding:.5rem 1rem;
+    width: fit-content;
+    padding: .5rem 1rem;
     margin-top: 1rem;
 }
-.index-about-skill {
-    width:35%;
-    display: grid;
-}
-.index-about-skill-bar {
-    height:.75rem;
-    border: .05rem solid white;
-}
-.index-about-skill-bar-fill {
-    height:100%;
-    background-color: var(--site-color1);
-}
-.excel {
-    width:90%;
-}
-.alteryx {
-    width:65%;
-}
-.sql {
-    width:72%;
-}
-.tableau {
-    width:88%;
-}
-.power-bi {
-    width:55%;
-}
-.html-css{
-    width:45%;
-}
-.past-companies {
+/*Past Companies*/
 
-    justify-content: center;
-    align-items: center;
-    margin-bottom:5rem ;
-}
-.past-companies-img ul{
-    display: flex;
+.past-companies-img{
+    margin:2rem;
+    display:flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
-.past-companies-img ul li img{
-    width:10rem;
-    height:5rem;
+.past-companies-img img{
+    height: 4rem;
     object-fit: scale-down;
-    object-position: center;
 }
-.past-companies-img ul li {
-    margin:.25rem;
-    padding: .5rem;
-    background-color: white;
-    border: .25rem solid var(--site-color1);
+#bg-blur{
+    filter: drop-shadow(0 0 .5rem var(--text-color));
+}
+/* Tablet Friendly Media Query */
+@media only screen and (max-width: 768px) {
+    body{
+        margin:0;
+        padding:0;
+    }
+
+    .main-hero-intro {
+        width: 100%;
+        padding-bottom: 2rem;
+        margin: 0 auto;
+    }
+
+    .main-icons, .main-hero-intro p, .main-hero-img {
+        display: none;
+    }
+
+    .green-button{
+        padding: .25rem .5rem;
+    }
+    .index-about-text a{
+        padding: .25rem .5rem;
+    }
+    .index-about-text{
+        max-width: 100%;
+    }
+    .about-skills-container{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        justify-content: center;
+        
+    }
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .past-companies-img ul li img {
+        width: 8rem;
+        height: 4rem;
+    }
 }

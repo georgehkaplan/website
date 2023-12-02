@@ -1,27 +1,5 @@
-/* Default styles */
-main {
-    margin: 2rem 10rem;
-    align-items: center;
-    justify-self: center;
-    list-style: circle;
-    text-align: justify;
-}
 
-main ol,
-main ul,
-main li {
-    margin: .25rem;
-}
-
-main ul {
-    list-style: circle;
-}
-
-.intro-image {
-    padding: 0 2rem;
-}
-
-.intro-image img {
+.intro-page img{
     width: 17rem;
     height: auto;
     object-fit: scale-down;
@@ -29,51 +7,20 @@ main ul {
     float: left;
     margin: 0 2rem;
 }
-
 .intro-text {
     text-align: justify;
 }
-
-table th {
-    width: 50%;
-    justify-content: space-evenly;
-    text-align: center;
+p{
+    text-indent: 2rem;
+    margin-bottom:2rem
 }
-
-table tr {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
+ol{
+    margin-left: 1rem;
+    margin-bottom:1rem;
+    list-style: square outside;
 }
-
-table td img {
-    width: 50%;
-    height: auto;
-    object-fit: scale-down;
-    vertical-align: middle;
-    margin: 2rem;
-}
-
-e {
-    color: var(--site-color1);
-}
-
-/* Media queries for mobile devices */
-@media only screen and (max-width: 600px) {
-    main {
-        margin: 1rem;
-    }
-
-    .intro-image img {
-        width: 100%;
-        float: none;
-        margin: 1rem 0;
-    }
-
-    table th,
-    table td img {
-        width: 100%;
-        margin: 1rem 0;
-    }
+ul{
+    margin-left: 1rem;
+    margin-bottom:1rem;
+    list-style-type: disc outside;
 }

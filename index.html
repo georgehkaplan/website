@@ -6,22 +6,17 @@
     <title>Home</title>
     <link rel='stylesheet' href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c565d3ada5.js" crossorigin="anonymous"></script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GBH66F5SX0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GBH66F5SX0');
-</script>
 <body>
     <!--Header-->
-    <header class="header-main">
-        <div class="header-main-logo">
-            <img src="Images/logo.png" alt="George Kaplan Logo">
-            <nav class="header-main-nav">
+    <header>
+        <div class="header-logo">
+            <a href="index.html" id="logo"><img src="Images/logo1.png" alt="logo" id="logo-img"></a>
+        </div>
+        <div class="header-nav">
+            <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -29,125 +24,109 @@
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="resume.html">Resume</a></li>
                 </ul>            
-            </nav> 
+            </nav>       
         </div>
-        <div class="header-icons">
-            <a class="social-icon" href="https://app.joinhandshake.com/stu/users/27807369" target="_blank"></a>
-            <a class="social-icon" href="https://www.linkedin.com/in/georgehkaplan/" target="_blank"></a>
-        </div>
+        <img src="Images/moon-icon.png" alt="moon icon" id="icon">
     </header>
+    <!--Mobile Header-->
+    <div class="mobile-container">
+        <nav class="mobile-nav">
+            <a href="about.html"><i class="fa-solid fa-circle-user"></i></a>
+            <a href="blog.html"><i class="fa-solid fa-book"></i></a>
+            <a href="index.html" class="active"><i class="fa-solid fa-house"></i></a>
+            <a href="projects.html"><i class="fa-solid fa-laptop-code"></i></a>
+            <a href="resume.html"><i class="fa-solid fa-file"></i></a>
+        </nav>
+    </div>
     <!--Main Content-->
     <main>
-        <div class="main-hero">
+
+        <div class="main-title">
             <div class="main-hero-intro">
-                <h1>Hi,<br>I'm <em>George</em></h1>
-                <p>Undergraduate Finance and Information Systems<br>student at San Diego State University<br></p>
-                <a href="projects.html">MY WORK</a>
+                <h1>Hi, I'm <br><text>George</text> Kaplan</h1>
+                <p>Undergraduate Finance and Information<br> Systems at San Diego State University</p>
+                <div class="main-icons">
+                    <a href="https://www.linkedin.com/in/george-kaplan-1509/" target="_blank" class="card"><img src="Images/linkedin-icon.png" alt="linkedin icon"></a>
+                    <a href="https://app.joinhandshake.com/stu/users/27807369" target="_blank" class="card"><img src="Images/handshake-icon.png" alt="handshake icon"></a>
+                    <a href="https://github.com/georgehkaplan" target="_blank" class="card"><img src="Images/github-icon.png" alt="github icon"></a>
+                    <a href="https://www.instagram.com/georgehkaplan/" target="_blank" class="card"><img src="Images/instagram-icon.png" alt="instagram icon"></a>
+                </div>
+                <a href="projects.html" class="green-button">MY WORK</a>
             </div>
-            <div class="main-hero-quotes">
-                <p>“As one person I cannot change the world, <br>but I can change the world of one person.”<br>
-                    <i>- Paul Shane Spear</i></p>
+            <div class="main-hero-img">
+                <img src="Images/portrait.png" alt="hero image">
             </div>
         </div>
-        <section class="index-category">
-            <h2>Categories</h2>
-            <div class="index-container">
-                <a href="about.html" class="index-category-box">
-                    <div class="category-overlay"></div>
-                    <h3>About</h3>
-                </a>
-                <a href="blog.html" class="index-category-box">
-                    <div class="category-overlay"></div>
-                    <h3>Blog</h3>
-                </a>
-                <a href="projects.html" class="index-category-box">
-                    <div class="category-overlay"></div>
-                    <h3>Projects</h3>
-                </a>
-                <a href="resume.html" class="index-category-box">
-                    <div class="category-overlay"></div>
-                    <h3>Resume</h3>
-                </a>            
-            </div>
-        </section>
-        <section class="index-about">
-            <div class="index-about-img">
-                <img src="Images/me.png" alt="george kaplan portrait photo">
-            </div>
-            <div class="index-about-text">
-                <h2>A little about me...</h2><br>
-                <p>Welcome!<br>I'm a Finance major at SDSU, skilled in data-driven insights and financial modeling.
-                    Based in San Diego, I'm passionate about tech-driven finance. <br>
-                    <br>
-                    Beyond academics, I love outdoor 
-                    activities and avid reading. My goal? To be a trusted finance expert driving meaningful insights
-                    for businesses and communities.<br></p>
-                <a href="about.html">Learn More!</a>
-            </div>
-            <div class="index-about-skill">
-                <p>Excel</p>
-                <div class="index-about-skill-bar">
-                    <div class="index-about-skill-bar-fill excel"></div>
+
+        <section class="index-about ">
+            <h2>A little about me...</h2>
+            <hr>
+            <div class="about-container">
+                <div class="index-about-text hidden fromLeft">
+                    <p>Welcome!</p>
+                    <p>I'm a Finance major at SDSU, skilled in data-driven insights and financial modeling. Based in San Diego, I'm passionate about tech-driven finance.</p>
+                    <p>Beyond academics, I love outdoor activities and avid reading. My goal? To be a trusted finance expert driving meaningful insights for businesses and communities.<br></p>
+                    <a href="about.html" class="green-button">Learn More!</a>
                 </div>
-                <p>Alteryx</p>
-                <div class="index-about-skill-bar">
-                    <div class="index-about-skill-bar-fill alteryx"></div>
-                </div>
-                <p>SQL</p>
-                <div class="index-about-skill-bar">
-                    <div class="index-about-skill-bar-fill sql"></div>
-                </div>
-                <p>Tableau</p>
-                <div class="index-about-skill-bar">
-                    <div class="index-about-skill-bar-fill tableau"></div>
-                </div>
-                <p>Power BI</p>
-                <div class="index-about-skill-bar">
-                    <div class="index-about-skill-bar-fill power-bi"></div>
-                </div>
-                <p>HTML & CSS</p>
-                <div class="index-about-skill-bar">
-                    <div class="index-about-skill-bar-fill html-css"></div>
+                <div class="about-skills-container hidden fromRight">
+                    <p>Excel</p>
+                    <div class="about-skill-bar">
+                        <div class="about-skill-bar-fill excel"></div>
+                    </div>
+                    <p>Alteryx</p>
+                    <div class="about-skill-bar">
+                        <div class="about-skill-bar-fill alteryx"></div>
+                    </div>
+                    <p>SQL</p>
+                    <div class="about-skill-bar">
+                        <div class="about-skill-bar-fill sql"></div>
+                    </div>
+                    <p>Tableau</p>
+                    <div class="about-skill-bar">
+                        <div class="about-skill-bar-fill tableau"></div>
+                    </div>
+                    <p>Power BI</p>
+                    <div class="about-skill-bar">
+                        <div class="about-skill-bar-fill power-bi"></div>
+                    </div>
+                    <p>HTML & CSS</p>
+                    <div class="about-skill-bar">
+                        <div class="about-skill-bar-fill html-css"></div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
-                <div class="past-companies">
-                    <h2>Where I've worked</h2>
-                    <div class="past-companies-img">
-                        <ul>
-                            <li><img src="Images/jpmorgan-logo.webp" alt="J.P. Morgan Chase Logo"></li>
-                            <li><img src="Images/dkp-logo.png" alt="Duffy Kruspodin LLC Logo"></li>
-                            <li><img src="Images/mitchell-logo.png" alt="Mitchell International Logo"></li>
-                            <li><img src="Images/betterbuzz-logo.webp" alt="Better Buzz Coffee Logo"></li>
-                            <li><img src="Images/akpsi-logo.png" alt="Alpha Kappa Psi logo"></li>
-                            <li><img src="Images/tedxsdsu-logo.png" alt="TEDxSDSU Logo"></li>
-                        </ul>
-                    </div>                
-                </div>
+        <section class="past-companies hidden">
+            <h2>Where I've been</h2>
+            <div class="past-companies-img">
+                <img src="Images/jpmorgan-logo.webp" id="bg-blur" alt="J.P. Morgan Chase Logo" class="company hidden">
+                <img src="Images/dkp-logo.png" id="bg-blur"  alt="Duffy Kruspodin LLC Logo" class="company hidden">
+                <img src="Images/mitchell-logo.png" id="bg-blur"  alt="Mitchell International Logo" class="company hidden">
+                <img src="Images/betterbuzz-logo.webp" id="bg-blur"  alt="Better Buzz Coffee Logo" class="company hidden">
+                <img src="Images/akpsi-logo.png" id="bg-blur"  alt="Alpha Kappa Psi logo" class="company hidden">
+                <img src="Images/tedxsdsu-logo.png" id="bg-blur"  alt="TEDxSDSU Logo" class="company hidden">
+                </ul>
+            </div>                
         </section>
     </main>
     <footer class="footer-main">
         <h2>Website Information</h2>
+        <hr id="footer-line">
         <div class="footer-main-content">
-            <div class="footer-sitemap">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                    </ul>      
-            </div>  
             <div class="footer-text">
-                <p>This website is created for a project in MIS:481 - E-business and Web Development at San Diego State University. <br>
-                    It serves as a demonstration of skills and knowledge acquired during the course. The content, products, and services displayed <br>
-                    here are for educational purposes only and do not represent actual offerings. <br>
-                    <br>
-                    For any inquiries or further information, please contact George Kaplan at gkaplan1509@sdsu.edu"</p>
-            </div>
+                <p>&copy; georgehkaplan.com<br>
+                </p>
+            </div>            
+            <div class="footer-sitemap">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>      
+            </div>  
             <div class="footer-contact">
-                <p>Contact Info</p>
                 <ul>
                     <li>Tel: (206)-890-7606</li>
                     <li>gkaplan1509@sdsu.edu</li>
@@ -156,5 +135,6 @@
             </div>            
         </div>
     </footer>
+
 </body>
 </html>

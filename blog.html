@@ -5,22 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel='stylesheet' href="css/main.css">
-    <link rel='stylesheet' href="css/blog.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <script src="https://kit.fontawesome.com/c565d3ada5.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GBH66F5SX0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GBH66F5SX0');
-</script>
 <body>
-    <header class="header-main">
-        <div class="header-main-logo">
-            <img src="Images/logo.png" alt="George Kaplan Logo">
-            <nav class="header-main-nav">
+    <header>
+        <div class="header-logo">
+            <a href="index.html" id="logo"><img src="Images/logo1.png" alt="logo" id="logo-img"></a>
+        </div>
+        <div class="header-nav">
+            <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -28,132 +23,174 @@
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="resume.html">Resume</a></li>
                 </ul>            
-            </nav> 
+            </nav>       
         </div>
-        <div class="header-icons">
-            <a class="social-icon" href="https://app.joinhandshake.com/stu/users/27807369" target="_blank"></a>
-            <a class="social-icon" href="https://www.linkedin.com/in/georgehkaplan/" target="_blank"></a>
-        </div>
+        <img src="Images/moon-icon.png" alt="moon icon" id="icon">
     </header>
-    <h1 class="main-title">Blog</h1>
+    <!--Mobile Header-->
+    <div class="mobile-container">
+        <nav class="mobile-nav">
+            <a href="about.html"><i class="fa-solid fa-circle-user"></i></a>
+            <a href="blog.html" class="active"><i class="fa-solid fa-book"></i></a>
+            <a href="index.html" ><i class="fa-solid fa-house"></i></a>
+            <a href="projects.html"><i class="fa-solid fa-laptop-code"></i></a>
+            <a href="resume.html"><i class="fa-solid fa-file"></i></a>
+        </nav>
+    </div>
     <main>
-        <h2>Recent Activity</h2>
-        <section class="blog-recent">
-            <div class="blog-post">
-                <img src="Images/blog-me.JPG" alt="george kaplan portrait">
-                <div class="blog-content">
-                    <h3>Final Semester at SDSU</h3>
-                    <em>Oct 2023</em>
-                    <p>Entering my last semester at San Diego State University, I'm brimming with gratitude and anticipation. These years have been a whirlwind of growth and learning. With a focus on Finance & Information Systems, I'm excited to apply my skills to real-world projects.<br><br>
-                        Beyond academics, leadership roles in organizations like Alpha Kappa Psi have enriched my education. As I approach this milestone, I'm eager to absorb every last bit of knowledge and make the most of my time on this vibrant campus. Here's to a memorable final semester and the exciting chapters ahead!
-                    </p>
+        <h1 class="main-title">Blog</h1>        
+        <div class="row">
+            <div class="blog-container">
+                <div class="card" id="googleDataCertificate">
+                    <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~S5SF2JJDQ6JX/CERTIFICATE_LANDING_PAGE~S5SF2JJDQ6JX.jpeg" class="hidden" alt="Google Data Analytics Certificate">
+                    <div class="card-content hidden">
+                        <h3>Google Data Analytics Certificate</h3>
+                        <em>Oct 2023</em>
+                        <p>I'm pleased to announce that I've completed the Google Data Analytics Certificate. This program has sharpened my skills in SQL, R, Tableau, and Google Sheets, and deepened my understanding of the analytical process from querying to actionable insights.</p>
+                        <p>Excited to apply this expertise to business challenges and contribute to informed decision-making. Open to discussing the program with anyone interested in exploring the field of data analytics.<a href="https://www.linkedin.com/embed/feed/update/urn:li:share:7129320545438859264">Here</a></p>
+                    </div>
                 </div>
-            </div>
-            <div class="blog-post">
-                <img src="Images/resume1.svg" alt="resume guide">
-                <div class="blog-content">
-                    <h3>Creating a Top-notch Resume Guide</h3>
-                    <em>Oct 2023</em>
-                    <p>I'm currently working on a comprehensive guide to crafting standout resumes. Drawing from my Finance & Information Systems background, I'll be sharing invaluable insights and practical tips for a resume that truly shines.<br><br>
-                    From structuring headers to nailing objective statements, expect clear, concise advice for every step. Stay tuned for this go-to resource to help you make a lasting impression in the professional world. 
-                    </p>
+                <div class="card hidden fromBottom" id="finalSemester">
+                    <img src="Images/blog-me.JPG" class="hidden" alt="">
+                    <div class="card-content hidden">
+                        <h3>Final Semester at SDSU</h3>
+                        <em>Oct 2023</em>
+                        <p>Entering my last semester at San Diego State University, I'm brimming with gratitude and anticipation. These years have been a whirlwind of growth and learning. With a focus on Finance & Information Systems, I'm excited to apply my skills to real-world projects.</p>
+                        <p>Beyond academics, leadership roles in organizations like Alpha Kappa Psi have enriched my education. As I approach this milestone, I'm eager to absorb every last bit of knowledge and make the most of my time on this vibrant campus. Here's to a memorable final semester and the exciting chapters ahead!</p>
+                    </div>
                 </div>
-            </div>
-            <div class="blog-post">
-                <img src="Images/summer-internship.jpeg" alt="Summer Internship at J.P. Morgan Chase">
-                <div class="blog-content">
-                    <h3>Summer Internship at J.P. Morgan Chase</h3>
-                    <em>Aug 2023</em>
-                    <p>Today marks my final day as a Summer Analyst in the Chase Leadership Development Program at JPMorgan Chase & Co. in Columbus, Ohio. These 9 weeks at this top financial institution have been a transformative experience.<br>
-                    <br>
-                    Special thanks to my manager (Tony Anzic, PMP®), my mentor (Kyuri Yum) my recruiter (Taylor Phoumivong, M.S. Ed), fellow interns, and all the remarkable individuals I've met across the firm. Your guidance and wisdom have been invaluable, and it has been an honor to work alongside such talented professionals.<br>
-                    <br>
-                    This summer has been a transformative chapter, and I'm excited to carry these learnings forward as I continue my journey!
-                    </p>
+                <div class="card hidden fromBottom" id="resumeGuide">
+                    <img src="Images/resume1.svg" class="hidden" alt="resume guide">
+                    <div class="card-content hidden">
+                        <h3>Creating a Top-notch Resume Guide</h3>
+                        <em>Oct 2023</em>
+                        <p>I'm currently working on a comprehensive guide to crafting standout resumes. Drawing from my Finance & Information Systems background, I'll be sharing invaluable insights and practical tips for a resume that truly shines.</p>
+                        <p>From structuring headers to nailing objective statements, expect clear, concise advice for every step. Stay tuned for this go-to resource to help you make a lasting impression in the professional world. </p>
+                    </div>
                 </div>
-            </div>
-            <div class="blog-post">
-                <img src="Images/blog-linkedin-cert.png" alt="Cert Prep: Excel Associate - Microsoft Office Specialist for Office 2019 and Office 365">
-                <div class="blog-content">
-                    <h3>LinkedIn Learning Certificate</h3>
-                    <em>Nov 2022</em>
-                    <p>I just finished the course “Cert Prep: Excel Associate - Microsoft Office Specialist for Office 2019 and Office 365” by Jennifer McBee!<br>
-                        <br>
-                        Check it out: <a href="https://lnkd.in/g4HAxsWa">Here</a>#microsoftexcel.</p>
+                <div class="card hidden fromBottom " id="summer2023InternshipReflection">
+                    <img src="Images/summer-internship.jpeg" class="hidden" alt="Summer Internship at J.P. Morgan Chase">
+                    <div class="card-content hidden">
+                        <h3>Summer Internship at J.P. Morgan Chase</h3>
+                        <em>Aug 2023</em>
+                        <p>Today marks my final day as a Summer Analyst in the Chase Leadership Development Program at JPMorgan Chase & Co. in Columbus, Ohio. These 9 weeks at this top financial institution have been a transformative experience.</p>
+                        <p>Special thanks to my manager (Tony Anzic, PMP®), my mentor (Kyuri Yum) my recruiter (Taylor Phoumivong, M.S. Ed), fellow interns, and all the remarkable individuals I've met across the firm. Your guidance and wisdom have been invaluable, and it has been an honor to work alongside such talented professionals.</p>
+                        <p>This summer has been a transformative chapter, and I'm excited to carry these learnings forward as I continue my journey!</p>
+                    </div>
                 </div>
-            </div>
-            <div class="blog-post">
-                <img src="Images/duffy-kruspodin-logo.jpeg" alt="Duffy Kruspodin Logo">
-                <div class="blog-content">
-                    <h3>Duffy Kruspodin Internship Acceptance</h3>
-                    <em>Oct 2022</em>
-                    <p>
-                        I'm excited to announce my acceptance at Duffy Kruspodin, LLP, as a Tax Intern and be joining their La Jolla office in Spring 2023!<br>
-                        <br>
-                        Thank you to Makenna Cornwall, PHR, Victoria Nelson, and Joanna Lopez-Garcia, MBA, for their support throughout this process, and I cannot wait to get started! #intern #thankyou</p>
+                <div class="card hidden fromBottom" id="summer2023InternshipAcceptance">
+                    <img src="Images/jpmc-logo.jpeg" class="hidden" alt="J.P. Morgan Chase Logo">
+                    <div class="card-content hidden">
+                        <h3>Summer 2023: Internship Acceptance</h3>
+                        <em>Nov 2023</em>
+                        <p>I'm happy to announce that I accepted my internship offer at JPMorgan Chase & Co. in the Chase Leadership Development Program (CLDP) for this upcoming summer as a Summer Analyst in Columbus, Ohio!</p>
+                        <p>I want to thank Taylor Phoumivong, M.S. Ed, Sarah Garcia, and everyone involved with the recruiting process for their guidance throughout the journey. I thank my teachers, mentors, and peers for their continuing support!</p>
+                        <p>I can't wait to get started and looking forward to this journey! hashtag#CLDP23</p>
+                    </div>
                 </div>
-            </div>
-            <div class="blog-post">
-                <img src="Images/blog-forage-certificate.pdf" alt="Forage: Corporate Analyst Development Program (CADP) Virtual Experience Program">
-                <div class="blog-content">
-                    <h3>Forage: J.P. Morgan CADP Certificate</h3>
-                    <em>Oct 2022</em>
-                    <p>
-                        Forage continues to expand my skills and knowledge in Finance. This morning, I completed the Corporate Analyst Development Program Virtual Experience by JPMorgan Chase & Co. and excited to take these skills into my career!
-                    </p>
+                <div class="card hidden fromBottom" id="linkedinCertificateExcelPrep">
+                    <img src="Images/blog-linkedin-cert.png" class="hidden" alt="Cert Prep: Excel Associate - Microsoft Office Specialist for Office 2019 and Office 365">
+                    <div class="card-content hidden">
+                        <h3>LinkedIn Learning Certificate</h3>
+                        <em>Nov 2022</em>
+                        <p>I just finished the course “Cert Prep: Excel Associate - Microsoft Office Specialist for Office 2019 and Office 365” by Jennifer McBee!<p>
+                        <p>a>#microsoftexcel.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="blog-post">
-                <img src="Images/jobtracking.png" alt="Job Tracking Template">
-                <div class="blog-content">
-                    <h3>Internship/Job Tracking Template</h3>
-                    <em>Sep 2022</em>
-                    <p>
-                        With the internship application season beginning and some industries starting, I wanted to share the template I use to monitor my applications.<br>
-                        <br>
-                        This contains conditional formatting that can show your progress. Once you view the document, create a copy and begin monitoring. Best of luck to everyone this 2023 internship season!
+                <div class="card hidden fromBottom" id="Spring2023InternshipAcceptance">
+                    <img src="Images/duffy-kruspodin-logo.jpeg" class="hidden" alt="Duffy Kruspodin Logo">
+                    <div class="card-content hidden">
+                        <h3>Duffy Kruspodin Internship Acceptance</h3>
+                        <em>Oct 2022</em>
+                        <p>I'm excited to announce my acceptance at Duffy Kruspodin, LLP, as a Tax Intern and be joining their La Jolla office in Spring 2023!<p>
+                        <p>Thank you to Makenna Cornwall, PHR, Victoria Nelson, and Joanna Lopez-Garcia, MBA, for their support throughout this process, and I cannot wait to get started! #intern #thankyou</p>
+                    </div>
+                </div>
+                <div class="card hidden fromBottom" id="ForageCADP">
+                    <img src="Images/blog-forage-certificate.pdf" class="hidden" alt="Forage: Corporate Analyst Development Program (CADP) Virtual Experience Program">
+                    <div class="card-content hidden">
+                        <h3>Forage: J.P. Morgan CADP Certificate</h3>
+                        <em>Oct 2022</em>
+                        <p>Forage continues to expand my skills and knowledge in Finance. This morning, I completed the Corporate Analyst Development Program Virtual Experience by JPMorgan Chase & Co. and excited to take these skills into my career!
                         </p>
+                    </div>
+                </div>
+                <div class="card hidden fromBottom" id="jobTrackingTemplate">
+                    <img src="Images/jobtracking.png" class="hidden" alt="Job Tracking Template">
+                    <div class="card-content hidden">
+                        <h3>Internship/Job Tracking Template</h3>
+                        <em>Sep 2022</em>
+                        <p>With the internship application season beginning and some industries starting, I wanted to share the template I use to monitor my applications.<p>
+                        <p>This contains conditional formatting that can show your progress. Once you view the document, create a copy and begin monitoring. Best of luck to everyone this 2023 internship season!</p>
+                    </div>
+                </div>
+                <div class="card hidden fromBottom" id="Summer2022InternshipReflection">
+                    <img src="Images/blog-mitchell.gif" class="hidden" alt="Mitchell International Internship Summer 2022">
+                    <div class="card-content hidden ">
+                        <h3>Mitchell International Internship</h3>
+                        <em>Aug 2022</em>
+                        <p>Today I had internship presentation for Enlyte. This marks my last week as a Finance Department Intern with the company and now walking away with an experience that cannot be compared.</p>
+                        <p>As I wrap up my time here, I want to reflect on my experience. This internship allowed for my creative side as it was an idea that needed to come to life. I designed company pages to easily find documentation of all Mitchell AR processes. Throughout my internship, I met with various teams of the company and created an organized structure from scratch. I got to understand financial concepts of a large company and furthermore create an everlasting impact. The entire experience allowed myself to grow as a professional and grateful for each individual I met.</p>
+                        <p>I'd like to thank the entire team I worked with at Mitchell International including Daniel Lambeth, Jordan Banducci, Catherine Clark, Lillian Goldstein, Michael Lanci, and Kaitlyn McMurtray</p>
+                        <p>I am returning to San Diego State University this fall as a third-year to continue my studies and looking forward to growing both professionally and personally!</p>
+                    </div>
+                </div>
+                <div class="card hidden fromBottom" id="betterbuzzReflection">
+                    <img src="https://media.licdn.com/dms/image/C4D22AQEFEsGdHv6CrA/feedshare-shrink_800/0/1647895059892?e=1703721600&v=beta&t=vkKRcbGre7FRMrCtwoZktg34C_ObaOOiias1ZKFnKCo" class="hidden" alt="Better Buzz Pride">
+                    <div class="card-content hidden">
+                        <h3>Better Buzz Reflection</h3>
+                        <em>Mar 2022</em>
+                        <p>This past friday was my last day with Better Buzz Coffee as a Shift Supervisor.</p>
+                        <p>I am forever grateful for my time with the company. As this was my first job since the pandemic, it brought joy to my heart to be in a postive and welcoming environment. I was honored when I was asked to be promoted from a Barista to Shift Supervisor at such a young age. The relationships I have developed with the company and my team will stay with me as I continue my journey through life.</p>
+                        <p>Thank you specifically to my manager, Katie Willis-Peña for the opportunity to work with you over the past year. As we say at Better Buzz, Life's Better Buzzed!</p>
+                    </div>
                 </div>
             </div>
-            <div class="blog-post">
-                <img src="Images/blog-mitchell.gif" alt="Mitchell International Internship Summer 2022">
-                <div class="blog-content">
-                    <h3>Mitchell International Internship</h3>
-                    <em>Aug 2022</em>
-                    <p>
-                        Today I had internship presentation for Enlyte. This marks my last week as a Finance Department Intern with the company and now walking away with an experience that cannot be compared.<br>
+            <div class="rightcolumn">
+                
+                <div class="about-me">
+                    <h2>About Me</h2>
+                    <img src="Images/pro-portrait.png" class="hidden" alt="George Kaplan Profile Picture">
+                    <p class="hidden">My name is George Kaplan, and I'm a student at San Diego State University pursuing a Bachelor of Science in Business Administration with a major in Finance and a minor in Information Systems. I'm on track to graduate in December 2023. As for my career aspirations, I aim to become a Financial Analyst.</p>
+                </div>
+                <div class="about-me post">
+                    <h2>Popular Posts</h2>
+                        <a href="#summer2023InternshipReflection">
+                            <h3>Summer Internship</h3>
+                            <p>6,065 Impressions</p>
+                        </a>
                         <br>
-                        As I wrap up my time here, I want to reflect on my experience. This internship allowed for my creative side as it was an idea that needed to come to life. I designed company pages to easily find documentation of all Mitchell AR processes. Throughout my internship, I met with various teams of the company and created an organized structure from scratch. I got to understand financial concepts of a large company and furthermore create an everlasting impact. The entire experience allowed myself to grow as a professional and grateful for each individual I met.<br>
-                        <br>
-                        I'd like to thank the entire team I worked with at Mitchell International including Daniel Lambeth, Jordan Banducci, Catherine Clark, Lillian Goldstein, Michael Lanci, and Kaitlyn McMurtray<br>
-                        <br>
-                        I am returning to San Diego State University this fall as a third-year to continue my studies and looking forward to growing both professionally and personally!
-                    </p>
+                        <a href="#summer2023InternshipAcceptance">
+                            <h3>Summer Internship Acceptance</h3>
+                            <p>6,323 Impressions</p>
+                        </a>
+                        <a href="#betterbuzzReflection">
+                            <h3>Better Buzz Reflection</h3>
+                            <p>6,453 Impressions</p>
+                        </a>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
+
     <footer class="footer-main">
         <h2>Website Information</h2>
+        <hr id="footer-line">
         <div class="footer-main-content">
-            <div class="footer-sitemap">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                    </ul>      
-            </div>  
             <div class="footer-text">
-                <p>This website is created for a project in MIS:481 - E-business and Web Development at San Diego State University. <br>
-                    It serves as a demonstration of skills and knowledge acquired during the course. The content, products, and services displayed <br>
-                    here are for educational purposes only and do not represent actual offerings. <br>
-                    <br>
-                    For any inquiries or further information, please contact George Kaplan at gkaplan1509@sdsu.edu"</p>
-            </div>
+                <p>&copy; georgehkaplan.com<br>
+                </p>
+            </div>            
+            <div class="footer-sitemap">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>      
+            </div>  
             <div class="footer-contact">
-                <p>Contact Info</p>
                 <ul>
                     <li>Tel: (206)-890-7606</li>
                     <li>gkaplan1509@sdsu.edu</li>
